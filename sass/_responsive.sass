@@ -1,0 +1,172 @@
+/* --responsive galería home--
+@media (min-width: 1024px)
+    .galeria
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: 200px 200px
+
+    .item1
+        grid-column: 1/2
+        grid-row: 1/3
+
+    .item2
+        grid-column: 3/2
+        grid-row: 1/3
+
+@media only screen and (min-width: 768px) and (max-width: 1023px)
+    .galeria
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: repeat(2, 200px)
+
+    .item1
+        grid-column: 1/3
+        grid-row: 1/2
+
+    .item6
+        display: none
+
+@media only screen and (min-width: 480px) and (max-width: 768px)
+    .galeria
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: repeat(3, 200px)
+
+    .item1, .item2
+        grid-column: 1/4
+
+    .item6
+        display: none
+
+@media only screen and (min-width: 320px) and (max-width: 480px)
+    .galeria
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(4, 200px)
+
+    .item5, .item6
+        display: none
+
+@media (max-width: 768px)
+// _______HEADER nota: solo faltaría el menú desplegable________
+    .header
+        height: 60px
+
+        .logo img
+            height: 40px
+            margin-top: 20px
+
+    nav, .usershop
+        display: none
+
+    .header .bars
+        display: block
+        cursor: pointer
+
+    // --Home--
+
+    .content-bienvenida
+        width: 95%
+        padding-top: 50px
+        padding-left: 20px
+
+    h1
+        font-size: 40px
+
+    /* --About--
+
+    .content-about p
+        padding-left: 30px
+        padding-right: 30px
+
+    /* --Destacado--
+
+    .destacado-home
+        grid-template-columns: 1fr
+        align-items: center
+        height: auto
+        width: 100%
+
+    .destacado-text h2
+        font-size: 50px
+        padding-bottom: 40px
+
+    /* --Arrival--
+
+    .arrival-home
+        grid-template-columns: 1fr
+        align-items: center
+        height: auto
+        width: 100%
+
+    /* _____FOOTER______
+
+    .container
+        max-width: 720px
+
+    .wraper .footer-widget
+        width: 100%
+        margin: 0 40px 50px
+
+        &:nth-child(1)
+            width: 100%
+            margin: 0 40px 50px
+
+    /* ___Servicios__
+
+    .service
+        width: auto
+        height: 100%
+        padding: 100px 4%
+
+    .service-content
+        grid-template-columns: 1fr
+
+        img
+            width: auto
+            height: 400px
+
+@media (max-width: 992px)
+// ____HOME__
+
+// ____seccion about____
+
+    .p-about
+        padding-left: 50px
+        padding-right: 50px
+
+    .about-parallax
+        background: none
+        background-image: url(img/mangacafe.jpeg)
+        background-size: cover
+        background-position: center
+
+    /* --Destacado--
+
+    .destacado-home
+        grid-template-columns: 1fr
+        align-items: center
+        height: auto
+        width: 100%
+
+    .destacado-text
+        width: 90%
+        margin: 20px
+        padding-left: 20px
+
+    /* _______FOOTER_________
+
+    .container
+        max-width: 960px
+
+    .wraper .footer-widget
+        width: calc(50% - 30px)
+
+        &:nth-child(1)
+            width: calc(50% - 30px)
+
+    /* ____Team___
+
+    .team
+        width: 100%
+        height: auto
+        padding: 90px 2%
+
+    .center h2
+        font-size: 3.2rem
